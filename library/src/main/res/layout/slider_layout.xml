@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hkm.slider.Tricks.MultiViewPager
+        android:id="@+id/mulitpages_slider_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.hkm.slider.Tricks.InfiniteViewPager
+        android:id="@+id/daimajia_slider_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.hkm.slider.Indicators.PagerIndicator
+        android:id="@+id/default_center_bottom_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        custom:shape="oval" />
+
+    <com.hkm.slider.Indicators.PagerIndicator
+        android:id="@+id/default_bottom_right_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp" />
+
+    <com.hkm.slider.Indicators.PagerIndicator
+        android:id="@+id/default_bottom_left_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp" />
+
+    <com.hkm.slider.Indicators.PagerIndicator
+        android:id="@+id/default_center_top_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingTop="10dp" />
+
+    <com.hkm.slider.Indicators.PagerIndicator
+        android:id="@+id/default_center_top_right_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" />
+
+    <com.hkm.slider.Indicators.PagerIndicator
+        android:id="@+id/default_center_top_left_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp" />
+
+    <FrameLayout
+        android:id="@+id/number_count_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+    <ImageView
+        android:id="@+id/arrow_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow_r" />
+
+    <ImageView
+        android:id="@+id/arrow_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow_l" />
+
+</RelativeLayout>

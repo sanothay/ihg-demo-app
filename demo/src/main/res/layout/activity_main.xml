@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.daimajia.slider.demo.MainActivity">
+
+    <com.hkm.slider.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        custom:auto_cycle="true"
+        custom:indicator_visibility="visible"
+        custom:pager_animation="Accordion"
+        custom:pager_animation_span="1100"
+        custom:slider_side_buttons="true" />
+
+    <com.hkm.slider.Indicators.PagerIndicator
+        android:id="@+id/custom_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        custom:selected_color="#0095BF"
+        custom:selected_drawable="@drawable/bird_small"
+        custom:selected_height="6dp"
+        custom:selected_padding_left="5dp"
+        custom:selected_padding_right="5dp"
+        custom:selected_width="6dp"
+        custom:shape="oval"
+        custom:unselected_color="#55333333"
+        custom:unselected_height="6dp"
+        custom:unselected_padding_left="5dp"
+        custom:unselected_padding_right="5dp"
+        custom:unselected_width="6dp" />
+
+    <com.hkm.slider.Indicators.PagerIndicator
+        android:id="@+id/custom_indicator2"
+        style="@style/AndroidImageSlider_Corner_Oval_Orange"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <View
+        android:id="@+id/slient"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/slider"
+        android:background="@color/red_23" />
+
+    <ListView
+        android:id="@+id/transformers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/slient"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/weather"
+            android:id="@+id/btnWeather" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/guest_service"
+            android:id="@+id/btnGuestService" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/map"
+            android:id="@+id/btnMap" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/kodi"
+            android:id="@+id/btnKodiApp"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/browser"
+            android:id="@+id/btnBrowser" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        >
+        <GridView
+            android:layout_height="wrap_content"
+            android:id="@+id/gridViewRoot"
+            android:layout_width="match_parent"
+            android:verticalSpacing="20dp"
+            android:numColumns="7"
+            android:stretchMode="columnWidth"
+            >
+        </GridView>
+    </LinearLayout>
+</RelativeLayout>
